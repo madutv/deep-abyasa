@@ -61,8 +61,3 @@ class AccuracyMultiLabel(EvalMetric):
 
 
 
-
-
-#strict = AccuracyStrict()
-#strict.update_and_get_preds(mx.nd.array([[1, 2, 3], [4, 5, 8], [4, 5, 8]]), mx.nd.array([[1, 2, 3], [4, 5, 6], [4, 5, 8]]), ['a', 'b', 'c'])
-#print(f'update_and_get_preds: {strict.pred_status}')
