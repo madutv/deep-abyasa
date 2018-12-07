@@ -12,6 +12,14 @@ deep\_abyasa.tests.preprocess.test\_download module
     :undoc-members:
     :show-inheritance:
 
+deep\_abyasa.tests.preprocess.test\_encode\_labels module
+---------------------------------------------------------
+
+.. automodule:: deep_abyasa.tests.preprocess.test_encode_labels
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
 
 Module contents
 ---------------

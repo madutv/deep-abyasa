@@ -6,6 +6,9 @@ Subpackages
 
 .. toctree::
 
+    deep_abyasa.tests.datasets
+    deep_abyasa.tests.helpers
+    deep_abyasa.tests.metrics
     deep_abyasa.tests.preprocess
 
 Module contents
