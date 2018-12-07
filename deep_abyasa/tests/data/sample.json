@@ -1,0 +1,14 @@
+[
+    {"file": "file1",
+    "label": "f1"        
+    },
+    {"file": "file2",
+    "label": "f2"        
+    },
+    {"file": "file4",
+    "label": "f1"        
+    },
+    {"file": "file32",
+    "label": "f2e"        
+    }
+]

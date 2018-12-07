@@ -1,4 +1,4 @@
-deep_abyasa
+deep-abyasa
 ===========
 
 .. toctree::

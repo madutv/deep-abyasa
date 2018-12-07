@@ -12,6 +12,14 @@ deep\_abyasa.preprocess.download module
     :undoc-members:
     :show-inheritance:
 
+deep\_abyasa.preprocess.encode\_labels module
+---------------------------------------------
+
+.. automodule:: deep_abyasa.preprocess.encode_labels
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
 
 Module contents
 ---------------

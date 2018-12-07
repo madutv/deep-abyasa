@@ -1,6 +1,13 @@
 deep\_abyasa.tests package
 ==========================
 
+Subpackages
+-----------
+
+.. toctree::
+
+    deep_abyasa.tests.preprocess
+
 Module contents
 ---------------
 

@@ -6,6 +6,7 @@ Subpackages
 
 .. toctree::
 
+    deep_abyasa.helpers
     deep_abyasa.preprocess
     deep_abyasa.tests
 
