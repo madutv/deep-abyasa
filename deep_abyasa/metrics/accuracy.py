@@ -4,7 +4,11 @@ import numpy as np
 
 
 class AccuracyMultiLabel(EvalMetric):
-    def __init__(self, axis=1, name='accuracy_strict',
+    """Child class of mxnet EvalMetric to calculate accuracy metric for
+       multi-lable datasets
+
+    """
+    def __init__(self, axis=1, name='accuracy_multi',
                  output_names=None, label_names=None):
         super(AccuracyMultiLabel, self).__init__(name, axis=axis,
                                              output_names=output_names,
@@ -13,6 +17,15 @@ class AccuracyMultiLabel(EvalMetric):
         self.pred_status = {}
 
     def update(self, labels, preds):
+        """Implementation of update method. Updates accuracy: sum_metric
+           and num_inst. Item is treated as accurate if all the labels
+           from prediction matches with all the given labels
+
+           Args:
+               lables: Acutals
+
+               preds: Predication
+        """
         labels, preds = check_label_shapes(labels, preds, True)
         for label, pred_label in zip(labels, preds):
             if pred_label.shape != label.shape:
@@ -26,7 +39,11 @@ class AccuracyMultiLabel(EvalMetric):
             #print(f'sum_metric: {self.sum_metric}')
             self.num_inst += len(pred_label)
 
-    def update_and_get_preds(self, labels, preds, names):
+    def get_incorrect_preds(self, labels, preds, names):
+        """Method to get incorrect predictions. Incorrect predictions
+           are updated on self.pred_status attribute
+
+        """
         labels, preds = check_label_shapes(labels, preds, True)
         #print(f'labels ahape {len(labels)}, {len(preds)}, {len(names)}')
 
