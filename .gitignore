@@ -125,3 +125,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+chem_struct_to_elem/
+chem_struct_to_elem*
